@@ -49,6 +49,7 @@ public class LocalDateTimeTest {
     System.out.println(localDateTime3);
   }
 
+  // Mengambil data LocalDateTime
   @Test
   void get() {
     LocalDateTime localDateTime = LocalDateTime.now();
@@ -62,9 +63,9 @@ public class LocalDateTimeTest {
     System.out.println(localDateTime.getNano());
   }
 
+  // Konversi dari dan ke LocalDate
   @Test
   void date() {
-
     LocalDateTime localDateTime = LocalDateTime.now();
     System.out.println(localDateTime);
 
@@ -76,9 +77,9 @@ public class LocalDateTimeTest {
 
   }
 
+  // Konversi dari dan ke LocalTime
   @Test
   void time() {
-
     LocalDateTime localDateTime = LocalDateTime.now();
     System.out.println(localDateTime);
 
@@ -87,6 +88,5 @@ public class LocalDateTimeTest {
 
     LocalDateTime result = localTime.atDate(LocalDate.now());
     System.out.println(result);
-
   }
 }
